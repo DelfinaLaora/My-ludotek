@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { GetAllBooksApplication } from '../../services/books.application';
 @Component({
   selector: 'dtbc-list-books',
   standalone: true,
@@ -7,4 +8,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './list-books.component.html',
   styleUrl: './list-books.component.css',
 })
-export class ListBooksComponent {}
+export class ListBooksComponent {
+  books$ = inject(GetAllBooksApplication).getAll();
+}
