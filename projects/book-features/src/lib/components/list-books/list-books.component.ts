@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 @Component({
-  selector: 'dtbc-component-list-books',
+  selector: 'dtbc-list-books',
   standalone: true,
-  imports: [],
-  templateUrl: './component-list-books.component.html',
-  styleUrl: './component-list-books.component.css'
+  imports: [CommonModule],
+  templateUrl: './list-books.component.html',
+  styleUrl: './list-books.component.css',
 })
-export class ComponentListBooksComponent {
-
-}
+export class ListBooksComponent {}
