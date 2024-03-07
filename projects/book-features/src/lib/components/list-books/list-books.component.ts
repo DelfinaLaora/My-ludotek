@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GetAllBooksApplication } from '../../services/books.application';
 import { SearchStore } from 'search';
@@ -8,6 +8,7 @@ import { SearchStore } from 'search';
   imports: [CommonModule],
   templateUrl: './list-books.component.html',
   styleUrl: './list-books.component.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListBooksComponent {
   books$ = inject(GetAllBooksApplication).getAll();

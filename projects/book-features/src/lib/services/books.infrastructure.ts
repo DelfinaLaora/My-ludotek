@@ -25,7 +25,7 @@ export const inMemoryGetAllBooks: GetAllBooks = {
     //   },
     // ];
 
-    return of(bookTable).pipe(delay(1500));
+    return of(filterTable).pipe(delay(1500));
   },
 };
 
