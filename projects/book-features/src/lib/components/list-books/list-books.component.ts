@@ -11,6 +11,12 @@ import { SearchStore } from 'search';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListBooksComponent {
-  books$ = inject(GetAllBooksApplication).getAll();
+  private readonly application = inject(GetAllBooksApplication);
+  books$$ = this.application.getAll();
+  isLoading$$ = this.application.isLoading();
   searchStore = inject(SearchStore).store;
+
+  load(): void {
+    this.application.load();
+  }
 }
