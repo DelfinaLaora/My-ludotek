@@ -1,0 +1,6 @@
+@Ludotek.BackOffice.web.API_HostAddress = https://localhost:5108
+
+GET {{Ludotek.BackOffice.web.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

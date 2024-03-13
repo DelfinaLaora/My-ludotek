@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludotek.BackOffice.web.API", "Ludotek.BackOffice.web.API\Ludotek.BackOffice.web.API.csproj", "{A859A558-FCAC-475B-B4A2-C39E20F2466F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{562DE505-B161-4181-BA9D-EBE9B4D86FA7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Books", "Books", "{559B6835-90A4-469A-AC96-6610C52BA53C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludotek.BackOffice.Core.Books.Models", "Ludotek.BackOffice.Core.Books.Models\Ludotek.BackOffice.Core.Books.Models.csproj", "{A890E978-2493-4BF3-BB6A-33BC924B7BF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A859A558-FCAC-475B-B4A2-C39E20F2466F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A859A558-FCAC-475B-B4A2-C39E20F2466F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A859A558-FCAC-475B-B4A2-C39E20F2466F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A859A558-FCAC-475B-B4A2-C39E20F2466F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A890E978-2493-4BF3-BB6A-33BC924B7BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A890E978-2493-4BF3-BB6A-33BC924B7BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A890E978-2493-4BF3-BB6A-33BC924B7BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A890E978-2493-4BF3-BB6A-33BC924B7BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{559B6835-90A4-469A-AC96-6610C52BA53C} = {562DE505-B161-4181-BA9D-EBE9B4D86FA7}
+		{A890E978-2493-4BF3-BB6A-33BC924B7BF4} = {559B6835-90A4-469A-AC96-6610C52BA53C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90C60D76-8880-493E-A498-00563D06E979}
+	EndGlobalSection
+EndGlobal
